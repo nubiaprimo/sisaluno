@@ -1,0 +1,332 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+body.pagina_fundo {
+  font-family: "Roboto", sans-serif;
+  background-image: url("imgs/livros.jpg"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+  
+h1 {
+  color: #333;
+  margin-bottom: 2vh;
+}
+
+a {
+  color: #007bff;
+  font-weight: 600;
+  text-decoration: none;
+  margin-bottom: 1vh;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+table {
+  width: 100%;
+  color: #666;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-collapse: collapse;
+  margin-top: 2vh;    
+}
+
+th,
+td {
+  border: 2px solid #ccc;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #f0f0f0;
+}
+
+.voltar,
+.excluir,
+.alterar {
+  font-weight: 600;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.voltar-inicio {
+  color: #1d00c4;
+}
+
+.voltar{
+  color: #1d00c4;
+  float: right;
+}
+
+.excluir {
+  color: #dc3545;
+}
+
+.alterar {
+  color: #007bff;
+}
+
+span {
+  color: #17a2b8;
+  background-color: #e2f3f7;
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: smaller;
+}
+
+.caixa_inicial{
+  padding: 4vh;
+  width: 50%;
+  height: 80%;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.caixa_form{
+  padding: 4vh;
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #0066ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center; 
+}
+
+select,
+input{
+line-height: inherit;
+}
+
+.caixa_tabela {
+  padding: 4vh;
+  width: 80%;
+  height: 80%;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu a {
+  display: inline-block;
+  padding: 8px 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  text-align: center;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.menu a:hover {
+  background-color: #f0f0f0;
+}
+
+.imagem-centralizada {
+  display: block;
+  margin: 0 auto;
+  max-width: 80%;
+  margin-top: 7px;
+}
+
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #333;
+}
+  
+.voltar-inicio{
+  color: #8b176e;
+  font-weight: 600;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0066ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  
+}
+
+.voltar {
+  color: #8b176e;
+  font-weight: 600;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0066ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  
+}
+
+.excluir{
+  color: rgb(233, 16, 16);
+  font-weight: 600;
+  margin: 3px;
+}
+
+.alterar{
+  color: #ff00ea;
+  font-weight: 600;
+  margin: 3px;
+}
+
+.inserir-nota{
+  color: #028037;
+  font-weight: 600;
+  margin: 3px;
+}
+
+.ver-notas{
+  color: #751b99;
+  font-weight: 600;
+  margin: 3px;
+}
+
+.matricular-aluno{
+  color: #22108b;
+  font-weight: 600;
+  margin: 3px;
+}
+
+.aviso{
+  color: rgb(233, 16, 16);
+}
+  
+spam{
+  color: #37fff5;
+  background-color: #cf0e0e;
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: 400;
+  text-shadow: 0px 0px 10px black;
+  font-size: smaller;
+}
+  
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0a966c;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.pagina-erro{
+  font-family: "Roboto", sans-serif;
+  background-image: url("imgs/livros.jpg"); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  }
+
+.error-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.voltar-btn {
+  display: block;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 20px;
+}
+
+.voltar-btn:hover {
+  background-color: #ccc;
+  color: #fff;
+}
+
+  
+  
